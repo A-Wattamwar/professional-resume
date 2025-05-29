@@ -100,9 +100,9 @@ Use the predefined commands for consistency:
 ```
 professional-resume/
 │
-├── Professional_Resume.tex    # Main LaTeX resume file
-├── README.md                 # This file
-└── Professional_Resume.pdf   # Compiled PDF (generated)
+├── Professional_Resume.tex         # Main LaTeX resume file
+├── README.md                       # This file
+└── Professional_Resume_Output.pdf  # Compiled PDF (generated)
 ```
 
 ## 🎨 Template Sections
