@@ -1,0 +1,226 @@
+%-----------------------------------------------------------------
+% Resume in LaTeX
+% Author : Ayush Sachin Wattamwar
+% License : MIT
+%-----------------------------------------------------------------
+
+\documentclass[letterpaper,10pt]{article} % Changed font size to 10pt
+
+%-------------------------
+% Package Imports
+%-------------------------
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+%-------------------------
+% Font Options (Uncomment one as needed)
+%-------------------------
+% Sans-serif fonts
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% Serif fonts
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+%-------------------------
+% Page Layout and Header/Footer Settings
+%-------------------------
+\pagestyle{fancy}
+\fancyhf{} % clear header and footer
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-------------------------
+% Section Formatting
+%-------------------------
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% PDF Accessibility
+%-------------------------
+\pdfgentounicode=1
+
+%-------------------------
+% Custom Commands
+%-------------------------
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textit{\small#1} & \textit{\small #2} \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+% RESUME STARTS HERE
+%-------------------------------------------
+\begin{document}
+
+%-------------------------------------------
+% Header
+%-------------------------------------------
+\begin{center}
+    \textbf{\Huge \scshape Ayush Sachin Wattamwar} \\ \vspace{1pt}
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{+1 (623) 297-5787} ~ 
+    {\faEnvelope\  \underline{awattamw@asu.edu}} ~ 
+    \faLinkedin\ \underline{\href{https://linkedin.com/in/ayush-wattamwarasu/}{linkedin.com/in/ayush-wattamwarasu}} ~
+    \faGithub\ \underline{\href{https://github.com/A-Wattamwar}{github.com/A-Wattamwar}}
+    \vspace{-5pt}
+\end{center}
+
+%-------------------------------------------
+% Education Section
+%-------------------------------------------
+\section{\textbf{Education}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Arizona State University}{Tempe, AZ}
+      {Bachelor of Science in Computer Science (Software Engineering), Minor in Business}
+      {\textbf{Expected} May 2027}  
+    
+    \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{
+        \item{
+          \textbf{GPA}{: 4.0} \\
+          \textbf{Academic Recognition}{: Dean's List} \\
+          \textbf{Honors and Awards}{: New American University Scholarship (\$13,500 Annually)} \\
+          \textbf{Relevant Coursework}{: Data Structures \& Algorithms; Object-Oriented Programming; Principles of Mobile App Development; Software Engineering; Computer Organization \& Assembly Language Programming; Logic in Computer Science; Digital Design; Discrete Mathematical Structures; Linear Algebra; Calculus I \& II} \\
+          \textbf{Leadership \& Extracurricular}{: Participated in \href{https://gcsp.engineering.asu.edu/}{\textbf{Grand Challenges Scholars Program}} and actively contributed to \href{https://epics.engineering.asu.edu/}{\textbf{Engineering Projects in Community Service}}}
+        }
+      }
+    \end{itemize}
+  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+% Projects Section
+%-------------------------------------------
+\section{\textbf{Projects}}
+  \resumeSubHeadingListStart
+
+    % Academic Review System Project
+\resumeProjectHeading
+  {\textbf{Academic Review System (ARS)} $|$ \emph{Java, JavaFX, H2 Database, JUnit, CSS} $|$ \href{https://github.com/A-Wattamwar/Academic_Review_System}{\textbf{GitHub}}}{2024}
+\resumeItemListStart
+ \resumeItem{Engineered comprehensive academic review platform with \textbf{role-based authentication} supporting 5+ user roles and secure password hashing, serving 1000+ potential users.}
+  \resumeItem{Architected scalable \textbf{MVC design} with 4 specialized database helpers managing user accounts, reviews, and admin requests using \textbf{H2 embedded database}.}
+  \resumeItem{Implemented automated \textbf{reviewer scorecard system} with weighted algorithms across 4 parameters, increasing review quality assessment efficiency by 60\%.}
+  \resumeItem{Developed robust \textbf{4-phase testing framework} using \textbf{JUnit 5} with 95\%+ code coverage, ensuring system reliability and comprehensive documentation.}
+\resumeItemListEnd
+     
+    % Meal Planner and Recipe Finder Project
+    \resumeProjectHeading
+      {\textbf{Meal Planner \& Recipe Finder} $|$ \emph{Swift, SwiftUI, SwiftData, MapKit, REST APIs} $|$ \href{https://github.com/A-Wattamwar/Meal_Planner_Recipe_Finder}{\textbf{GitHub}}}{2024}
+    \resumeItemListStart
+      \resumeItem{Architected comprehensive iOS application using \textbf{SwiftUI} and \textbf{MVVM design pattern}, integrating \textbf{Edamam Recipe API} to serve 10,000+ recipes with personalized filtering.}
+      \resumeItem{Engineered complex data persistence layer using \textbf{SwiftData} and \textbf{async/await} concurrency for seamless API integration and real-time synchronization.}
+      \resumeItem{Built sophisticated UI system with 8+ views including meal planning and \textbf{MapKit} restaurant discovery, supporting dark mode and responsive design.}
+      \resumeItem{Collaborated with teammate implementing advanced features including calorie tracking and location-based restaurant finder with secure API authentication.}
+    \resumeItemListEnd
+
+    % YouDub Project
+    \resumeProjectHeading
+      {\textbf{CalHacks: YouDub Chrome Extension} $|$ \emph{JavaScript, HTML, CSS, Chrome APIs, REST APIs} $|$ \href{https://github.com/A-Wattamwar/YouDub}{\textbf{GitHub}}}{October 2024}
+    \resumeItemListStart
+      \resumeItem{Developed innovative Chrome extension enabling YouTube accessibility through customizable voice-overs, integrating \textbf{Google Cloud Translate} and \textbf{ElevenLabs APIs} for 100+ languages.}
+      \resumeItem{Engineered real-time transcription processing and audio synchronization using \textbf{Chrome Extension APIs}, handling YouTube's security protocols seamlessly.}
+      \resumeItem{Collaborated with 4-member team during 48-hour \textbf{CalHacks hackathon}, managing 100+ Git commits while debugging complex browser security issues.}
+      \resumeItem{Implemented comprehensive solution architecture supporting multiple voice models, resulting in Chrome Web Store submission with global accessibility impact.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+  
+%-------------------------------------------
+% Experience Section
+%-------------------------------------------
+\section{\textbf{Experience}}
+\resumeSubHeadingListStart
+
+  % Junglore Internship
+  \resumeSubheading
+    {Application Developer Intern}{10/24 – 03/25}
+    {\href{https://www.junglore.in/}{Junglore | junglore.in}}{Remote, Mumbai, India}
+  \resumeItemListStart
+    \resumeItem{Architected scalable mobile application features using \textbf{Flutter (Dart)} framework, implementing modular design patterns that improved code reusability by 40\%.}
+    \resumeItem{Engineered comprehensive "Trips \& Safari" module with \textbf{Flutter Splash} integration, designing user-centric interfaces through \textbf{Figma} prototyping that increased user engagement by 35\%.}
+    \resumeItem{Collaborated with cross-functional team of 5 developers in \textbf{agile environment}, exploring \textbf{AI integration opportunities} including ChatGPT API implementation.}
+    \resumeItem{Implemented responsive UI elements and state management solutions for smooth performance across multiple device setups.}
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-------------------------------------------
+% Technical Skills Section
+%-------------------------------------------
+\section{\textbf{Technical Skills}}
+\begin{itemize}[leftmargin=0.15in, label={}]
+  \small{
+    \item{
+      \textbf{Languages}{: Java, Python, Swift, JavaScript, TypeScript, C/C++, Dart, HTML5, CSS, SQL, MATLAB} \\
+      \textbf{Developer Tools}{: Git, Xcode, IntelliJ IDEA, Visual Studio Code, Eclipse, Figma, PyCharm, Overleaf, Jira} \\
+      \textbf{Libraries/Frameworks}{: SwiftUI, Flutter, JavaFX, React, Node.js, Spring Boot, H2 Database, JUnit}\\
+      \textbf{Certifications}{: MKCL KLiC C Programming Course (Completed five programming projects, emphasis on algorithm development); Learn Python Programming Masterclass (Python Fundamentals, OOP concepts, \& program development)}
+    }
+  }
+\end{itemize}
+
+\end{document}
