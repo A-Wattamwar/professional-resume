@@ -25,7 +25,7 @@ You'll need a LaTeX distribution installed on your system:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/professional-resume.git
+   git clone https://github.com/A-Wattamwar/professional-resume.git
    cd professional-resume
    ```
 
