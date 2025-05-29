@@ -11,6 +11,14 @@ A clean, modern LaTeX resume template designed for software engineers and comput
 - **Icon Integration**: FontAwesome icons for contact information and social links
 - **Hyperlinks**: Clickable links for email, LinkedIn, GitHub, and project repositories
 
+## 📸 Preview
+
+Here's what the compiled resume looks like:
+
+![Resume Preview](Preview/resume_preview.png)
+
+*You can view the full PDF output [here](Professional_Resume_Output.pdf)*
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -101,8 +109,12 @@ Use the predefined commands for consistency:
 professional-resume/
 │
 ├── Professional_Resume.tex         # Main LaTeX resume file
+├── Professional_Resume_Output.pdf  # Compiled PDF (generated)
+├── Preview/
+│   └── resume_preview.png          # Resume preview image
 ├── README.md                       # This file
-└── Professional_Resume_Output.pdf  # Compiled PDF (generated)
+├── LICENSE                         # MIT License
+└── .gitattributes                  # Git attributes file
 ```
 
 ## 🎨 Template Sections
